@@ -58,6 +58,10 @@ function joints_theme_support() {
 		
 	}	
 	
+	if( function_exists('acf_set_options_page_title') ) {
+    	acf_set_options_page_title( __('Theme Options') );
+	}
+	
 } /* end theme support */
 
 add_action( 'after_setup_theme', 'joints_theme_support' );
