@@ -62,6 +62,11 @@ function joints_theme_support() {
     	acf_set_options_page_title( __('Theme Options') );
 	}
 	
+// 	Custom Image Sizes
+	add_image_size( 'fest-thumb', 589, 337, true );
+	add_image_size( 'image-text', 481, 374, true );
+
+	
 } /* end theme support */
 
 add_action( 'after_setup_theme', 'joints_theme_support' );

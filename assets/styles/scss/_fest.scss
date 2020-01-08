@@ -1,0 +1,305 @@
+.page-template-page-template-fest {
+	
+	.banner-slider {
+		.single-slide {
+			.inner {
+			@include breakpoint (medium) {
+				min-height: 440px;
+			}
+			}
+		}
+	}
+	
+.circle-icon {
+
+	.inner {
+		display: flex;
+		align-items: center;
+		
+		.icon-wrap {
+			width: 70px;
+			height: 70px;
+			min-width: 70px;
+			min-height: 70px;
+			border: 2px solid #163D3E;
+			border-radius: 100%;
+			background: $brand-primary;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+		@include breakpoint(medium) {
+				width: 100px;
+				height: 100px;
+			}
+			
+			.inner {
+				width: 60px;
+				height: 60px;
+				min-width: 60px;
+				min-height: 60px;
+				border: 2px solid #163D3E;
+				background: $brand-secondary;
+				border-radius: 100%;
+				display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    
+			@include breakpoint(medium) {
+				width: 86px;
+				height: 86px;
+			}
+			    
+			    img {
+				    transform: scale(0.5);
+			    }
+			    
+			}
+		}
+	
+		p {
+			font-family: Museo Sans;
+			font-weight: 300;
+			font-size: rem-calc(18px);
+			color: #585858;
+			letter-spacing: 0;
+			line-height: 1.44444;
+		}
+		
+	}
+	
+}
+	
+	.top {
+		
+		.fest-info-wrap {
+			padding-top: 3.1em;
+
+			padding-bottom: 1.55em;
+		
+			.single-info {
+				min-width: 300px;
+				padding-bottom: 1.55em;
+				
+				a {
+				
+				&:hover > .icon-wrap {
+					transform: scale(1.05);
+				}
+				
+				}
+				
+				.inner {
+					display: flex;
+					align-items: center;
+
+					.icon-wrap {
+						margin-right: 1.5em;
+						border: 2px solid #163D3E;
+						background: $brand-primary;
+						transition: $transition;
+						
+						.inner {
+						    
+						}
+					}
+				
+					p {
+						font-family: Museo Sans;
+						font-weight: 300;
+						font-size: rem-calc(18px);
+						color: #585858;
+						letter-spacing: 0;
+						line-height: 1.44444;
+					}
+					
+				}
+				
+			} 
+			
+		}
+			
+	}
+		
+	.bottom {	
+		padding-top: 3.1em;
+	    
+	    > .inner {
+	        padding-bottom: 12.4em;
+			background-image: url(/wp-content/themes/wwhf/assets/images/fest-graphic.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center center;
+		
+			.fest-about-link {
+				padding-top: 0;
+				padding-bottom: 1.5em;
+				
+				a {
+					color: $white;
+					
+				&:hover {
+					.inner .icon-wrap {
+						transform: scale(1.05);
+					}
+				}
+				
+					.inner {
+						max-width: 203px;
+						margin: auto;
+						justify-content: center;
+						background-image: url(/wp-content/themes/wwhf/assets/images/six-prong.svg);
+						background-repeat: no-repeat;
+						background-size: contain;
+						background-position: center center;
+						
+						.icon-wrap {
+							background: #33A2A4;
+							border: 2px solid $brand-accent;
+							transition: $transition;
+							
+							.inner {
+								background: #DAC041;
+							    
+							}
+						}
+											
+					}
+					
+					p {
+						font-family: $font-h1;
+						font-size: rem-calc(21px);
+						color: $white;
+						letter-spacing: 0.13px;
+						text-align: center;
+						line-height: 1.35;
+						padding-top: 0.85em;
+					}
+					
+				}
+				
+			} 
+		
+		}
+		
+		.featured-courses-tickets {
+			
+			> .grid-container {
+				position: relative;
+				top: -10.35em;
+				margin-bottom: -10.35em;
+				
+				.fest-about-links {
+					
+					.single-course {
+						margin-bottom: 1.55em;
+						
+						.inner {
+							padding: 2.5em 2em;
+							background: #fff;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							box-shadow: 0 2px 5px 0 rgba(0,0,0,0.50);
+							
+						@include breakpoint(large) {
+							flex-direction: row;
+							padding: 2.5em 2em;
+						}
+
+						@include breakpoint(large) {
+							padding: 2.5em 3.75em;
+						}
+						
+							.left {
+								height: 100%;
+								position: relative;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+
+								
+							@include breakpoint(large) {
+								padding-right: 2em;
+							}
+								
+								.dot-divider {
+									position: absolute;
+									right: 0;
+									top: -1.2em;
+									bottom: -1.2em;
+									width: 7px;
+									background: url(/wp-content/themes/wwhf/assets/images/course-divider-dots.svg);
+									background-repeat: no-repeat;
+									background-size: contain;
+									background-position: center center;
+									
+/*
+								@include breakpoint(medium) {
+									position: absolute;
+									right: 0;
+									top: -1.2em;
+									bottom: -1.2em;
+									width: 7px;
+									transform: rotate(90deg);
+								}
+*/
+									
+								}
+								
+							}
+							
+							
+							.right {
+								
+								img.divider-dots-mobile {
+									display: block;
+									margin: 1em auto 0.8em;
+								}
+								
+							@include breakpoint(large) {
+								padding-left: 2.1em;
+							}
+								
+								h3 {
+									font-size: rem-calc(21px);
+									color: #1D120A;
+									letter-spacing: -0.26px;
+									line-height: 32px;
+								}
+								
+								p {
+									font-size: rem-calc(18px);
+									color: #1F1107;
+									letter-spacing: 0;
+									line-height: 1.35;
+								}
+							}
+							
+						}
+						
+					}
+					
+				}
+				
+			
+				.fest-tickets {
+					
+					.fancy-header-wrap {
+						padding-top: 1.55em;
+					}
+					
+					.ticket-card {
+						margin: 2.7em auto -3.2em;
+					}
+					
+				}
+				
+			}			
+			
+		}
+		
+	}
+
+}
+	

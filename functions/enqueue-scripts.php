@@ -4,6 +4,15 @@ function site_scripts() {
         
     // Adding scripts file in the footer
     wp_enqueue_script( 'site-js', get_template_directory_uri() . '/assets/scripts/scripts.js', array( 'jquery' ), filemtime(get_template_directory() . '/assets/scripts/js'), true );
+
+    // Adding FontAwesome Icons
+    wp_enqueue_script( 'fontawesome-js', get_template_directory_uri() . '/assets/fonts/fontawesome/js/all.js', array(), filemtime(get_template_directory() . '/assets/fonts/fontawesome/js/all.js'), true );
+
+    // Adding AddToAny
+    wp_enqueue_script( 'addtoany-js', '//static.addtoany.com/menu/page.js', array(), true );    
+    
+    // Register main Google Fonts
+// 	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat|Nunito+Sans&display=swap', false );
    
     // Register main stylesheet
     wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/styles/style.css', array(), filemtime(get_template_directory() . '/assets/styles/scss'), 'all' );

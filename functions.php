@@ -16,8 +16,14 @@ require_once(get_template_directory().'/functions/enqueue-scripts.php');
 // Register custom menus and menu walkers
 require_once(get_template_directory().'/functions/menu.php'); 
 
+// Register custom widgets
+require_once(get_template_directory().'/functions/widgets.php');
+
 // Register sidebars/widget areas
 require_once(get_template_directory().'/functions/sidebar.php'); 
+
+// Register custom functions
+require_once(get_template_directory().'/functions/custom.php');
 
 // Makes WordPress comments suck less
 require_once(get_template_directory().'/functions/comments.php'); 

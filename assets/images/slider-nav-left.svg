@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="102px" viewBox="0 0 50 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Oval Copy 15 + Oval Copy 17 Mask Copy Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="54" height="107"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BH_HACKINFEST_HOMEPAGE_BUNBUN" transform="translate(-101.000000, -515.000000)">
+            <g id="Oval-Copy-15-+-Oval-Copy-17-Mask-Copy-Copy" transform="translate(101.000000, 511.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <circle id="Oval-Copy-15" stroke="#1B130D" fill="#33A2A4" mask="url(#mask-2)" cx="-1" cy="55" r="50"></circle>
+                <circle id="Oval-Copy-17" stroke="#1B130D" fill="#DAC041" mask="url(#mask-2)" cx="-1" cy="55" r="43"></circle>
+                <g id="-Arrows-/-Small-/-Fw" mask="url(#mask-2)" fill="#1B130D">
+                    <g transform="translate(12.000000, 47.000000)" id="Line">
+                        <polygon transform="translate(5.072582, 8.469670) rotate(-90.000000) translate(-5.072582, -8.469670) " points="11.2784053 3.46966991 13.1754935 5.36675813 5.0725817 13.4696699 -3.03033009 5.36675813 -1.13324187 3.46966991 5.0725817 9.67549349"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

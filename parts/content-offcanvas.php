@@ -6,7 +6,12 @@
  */
 ?>
 
-<div class="off-canvas position-right" id="off-canvas" data-off-canvas>
+<div class="off-canvas position-right old-paper-bg" id="off-canvas" data-off-canvas>
+	
+	<div class="menu-close-wrap cell small-12 text-right">
+		<button id="mobile-menu-close" class="no-style close-x black thin" type="button" data-toggle="off-canvas"><span></span><span></span></button>
+	</div>
+	
 	<?php joints_off_canvas_nav(); ?>
 
 	<?php if ( is_active_sidebar( 'offcanvas' ) ) : ?>

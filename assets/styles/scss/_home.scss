@@ -1,0 +1,114 @@
+.page-template-page-template-home {
+	
+	.top {
+		
+		.banner-slider {
+			.single-slide {
+				.inner {
+				@include breakpoint (medium) {
+					min-height: 560px;
+				}
+				}
+			}
+		}
+
+		.about-heading-wrap {
+			padding-top: 2.9em;
+		}
+		
+	}
+		
+	.bottom {	
+		
+		.about-wrap {
+			padding-top: 2.55em;
+			padding-bottom: 2.7em;
+		
+			.about-copy {
+				max-width: 811px;
+				margin: auto;
+				font-weight: 700;
+				font-size: rem-calc(17px);
+				color: #FFFFFF;
+				letter-spacing: 0;
+				text-align: center;
+				line-height: 1.6;
+			
+			@include breakpoint(medium) {
+				font-size: rem-calc(20px);
+			}
+				
+			}
+			
+			.green-2-points {
+				padding-top: 1.5em;
+				padding-bottom: 0.45em;
+			}
+			
+			.multi-links-wrap {
+				justify-content: center;
+			}
+			
+		}
+		
+		.fests-this-year-wrap {
+			padding-top: 3.2em;
+			padding-bottom: 2.75em;
+			
+			.fest-grid {
+				
+				> .grid-x {
+				    max-width: 100%;
+					margin: auto;
+
+				}
+			
+				.single-fest {
+					position: relative;
+					margin-top: 2.55em;
+					
+					img {
+						box-shadow: 10px 10px 0px 0px #DAC041;
+						transition: $transition;
+					}
+					
+					.overlay {
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						flex-direction: column;
+						
+						h3 {
+							padding-bottom: 0.3em;
+						}										
+					}
+					
+					a {
+						color: $white;
+					}
+				
+				&.hovered {
+					img {
+						box-shadow: 14px 14px 0px 0px #DAC041;
+					}		
+				}
+					
+				}
+				
+				img.tickets-divider {
+					margin-top: 5em;
+				}
+				
+			}
+			
+		}
+		
+	}
+
+}
+	
