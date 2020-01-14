@@ -18,7 +18,7 @@
 								
 								<div class="grid-x grid-padding-x">
 							
-									<ul class="menu cell small-12 medium-shrink">
+									<ul class="menu cell small-12 tablet-shrink">
 											
 										<li class="wild-west-logo">
 											<a href="<?php echo home_url(); ?>">
@@ -35,7 +35,7 @@
 									</ul>
 							
 									
-									<div class="cell  small-12 medium-shrink">
+									<div class="cell  small-12 tablet-shrink">
 										<nav role="navigation">
 				    						<?php joints_footer_links(); ?>
 				    					</nav>
@@ -50,10 +50,10 @@
 								<div class="stay-connected grid-x grid-padding-x align-middle">
 			    									    				
 				    				<?php if( $heading = get_field('stay_connected_heading', 'option') ): ?>
-				    					<p class="cell small-12 medium-shrink"><?php echo $heading ?></p>
+				    					<p class="cell small-12 tablet-shrink"><?php echo $heading ?></p>
 				    				<?php endif ;?>
 				    				
-				    				<ul class="menu cell small-12 medium-shrink">
+				    				<ul class="menu cell small-12 tablet-shrink">
 					    				
 					    				<?php if( $facebook = get_field('facebook_link', 'option') ): ?>
 					    					<li><a href="<?php echo $facebook ;?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>

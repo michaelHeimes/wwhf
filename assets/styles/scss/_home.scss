@@ -16,6 +16,47 @@
 			padding-top: 2.9em;
 		}
 		
+		.home-buffalo-scene {
+			position: relative;
+		    min-height: 60px;
+		    min-height: 20vw;
+		    
+		@media screen and (min-width: 1365px) {
+			min-height: 273px;
+		}
+			
+			img {
+				width: 100%;
+				position: absolute;
+				bottom: -1px;
+				
+			&.left {
+				max-width: 65%;
+				max-width: 65vw;
+				left: 0;
+				
+			@media screen and (min-width: 1365px) {
+				max-width: 791px;
+			}
+				
+			}
+			
+			&.right {
+				max-width: 42%;
+				max-width: 42vw;
+				right: 0;
+				
+			@media screen and (min-width: 1365px) {
+				max-width: 573px;
+			}
+				
+			}
+				
+			}
+			
+			
+		}
+		
 	}
 		
 	.bottom {	
@@ -47,6 +88,21 @@
 			
 			.multi-links-wrap {
 				justify-content: center;
+				flex-direction: column;
+				
+			@include breakpoint(medium) {
+				flex-direction: row;
+			}
+			
+				a.multi-link:not(:last-child) {
+					margin-right: 0;
+					
+				@include breakpoint(medium) {
+					margin-right: 1.7em;
+				}
+					
+				}
+				
 			}
 			
 		}

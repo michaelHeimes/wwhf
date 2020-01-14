@@ -1,22 +1,21 @@
 jQuery( document ).ready(function($) {
-	
-// 	Disable Foundation Dropdown Menu
-// 	$('#main-nav').foundation('_destroy');
-
-// 	Disable Foundation Off-Canvas  
-// 	$('.page-theme-wild-west').foundation('_destroy');
-	
+		
 // 	.top padding-top set to header height
-	function setTopPadding() {
-		$headerHeight = $('header').innerHeight();
-		$('.top.old-paper-bg').css('padding-top', $headerHeight);
-	};
-	
-	setTopPadding();
-	
+	$('header.header').imagesLoaded( function() {	
+		function setTopPadding() {
+			$headerHeight = $('header.header').innerHeight();
+			$('.top.old-paper-bg').css('padding-top', $headerHeight);
+		};
+		setTopPadding();
+		
 	$(window).resize(function() {
 		setTopPadding();
 	});
+		
+	});
+	
+	
+
 	
 // 	Top Alert
 	if($('#alert').length) {

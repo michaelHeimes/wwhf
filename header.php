@@ -110,7 +110,7 @@
 							<?php endif;?> 
 						
 							<?php if(get_field('header_logo')== 'way-west'):?>
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/way-west-header-graphic.svg"/>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/way-west-header-graphic.png"/>
 							<?php endif;?> 
 						
 						</div>

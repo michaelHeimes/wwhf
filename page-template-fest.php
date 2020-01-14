@@ -28,7 +28,7 @@ get_header(); ?>
 						
 						<div class="grid-x grid-padding-x align-center">
 				
-							<div class="single-info circle-icon cell small-12 medium-shrink">
+							<div class="single-info circle-icon cell small-12 tablet-shrink">
 								
 								<div class="inner">
 									
@@ -49,7 +49,7 @@ get_header(); ?>
 								
 							</div>
 		
-							<div class="single-info circle-icon cell small-12 medium-shrink">
+							<div class="single-info circle-icon cell small-12 tablet-shrink">
 								
 								<a class="inner" href="<?php the_field('location_map_link');?>" target="_blank">
 									
@@ -88,6 +88,11 @@ get_header(); ?>
 				<div class="bottom secondary-bg">
 					
 					<div class="inner">
+						
+						<?php if( get_field('header_logo')== 'wild-west'):?>
+							<img class="mountain-half left show-for-tablet" src="<?php echo get_template_directory_uri(); ?>/assets/images/left-mountains.svg"/>
+							<img class="mountain-half right show-for-tablet" src="<?php echo get_template_directory_uri(); ?>/assets/images/right-mountains.svg"/>		
+						<?php endif;?>				
 					
 						<div class="grid-container">
 						<div class="fest-about-links grid-x grid-padding-x small-up-1 medium-up-2 large-up-4">
@@ -147,7 +152,7 @@ get_header(); ?>
 						<div class="grid-container">
 							
 							<div class="fancy-header-wrap cell small-12">
-								<h2><?php the_field('featured_courses_heading');?></h2>
+								<h2 class="white"><?php the_field('featured_courses_heading');?></h2>
 							</div>
 
 							<div class="fest-about-links grid-x grid-padding-x" data-equalizer data-equalize-on="medium" id="test-eq">

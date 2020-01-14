@@ -5,7 +5,7 @@
     	padding: 1.5em;
 	}
 	
-		div#off-canvas #offcanvas-nav.menu.accordion-menu li a:after {
+		div#off-canvas #offcanvas-nav.menu.accordion-menu > li > a:after {
 			display: none;
 		}
 
@@ -59,16 +59,27 @@
 						letter-spacing: 0.15px;
 						line-height: 1.1;
 						padding: 0.6em 1em 0.4em;
-						transition: background-color 0.25s ease, color 0.25s ease
-						
+						transition: background-color 0.25s ease, color 0.25s ease;
 					}	 
 				
 					ul.submenu {
 					
 						li {
 							a {
+								position: relative;
 								font-size: rem-calc(19px);
-								padding: .4em 1.3em .2em;		
+								padding: .5em 1.3em .15em;
+								display: flex;
+								justify-content: space-between;
+								
+							&:after {
+								content: url(/wp-content/themes/wwhf/assets/images/Fw-black.svg);
+								position: relative;
+								transition: $transition;
+								right: -4px;
+								margin-top: -1px;
+							}
+							
 							}
 							
 						&:first-child {
@@ -127,14 +138,13 @@
 			top: 50%;
 			transform: translateY(-50%);	
 			
-		@include breakpoint (small only) {
 			span {
 				top: 10px;
 				left: 0px;
 				height: 3px;
 				width: 19px;
 			}
-		}	
+			
 			
 		@include breakpoint (medium) {
 			right: 1.55em;
@@ -148,6 +158,7 @@
 
 .header {
 	position: absolute;
+	z-index: 5;
 	width: 100%;
 	
 	.top-bar {
@@ -162,11 +173,23 @@
 			background: transparent;
 		}
 		
-	@include breakpoint (small only) {
 		.top-bar-left {
 			flex: 1 0 auto;
+
+			.site-logo img {
+				width: 100%;
+				height: auto;
+				max-width: 220px;
+				
+			@media screen and (min-width: 500px) {
+				max-width: none;
+			} 
+				
+			}
 			
 			.wild-west-logo img {
+				width: 100%;
+				height: auto;
 				max-width: 177px;
 			}
 		}
@@ -175,12 +198,11 @@
 			flex: 0 0 auto;
 		}
 		
-	}
 		
 		
 		.top-bar-right {
 			
-		&.show-for-small-only {
+		&.show-for-small {
 			ul li a {
 				width: 26px;
 				height: 25px;
@@ -343,11 +365,7 @@
 	.header-embellishment-wrap {
 		margin: auto;
 		padding-bottom: 0.5em;
-		
-	@media screen and (min-width: 1400px) {
-		padding-bottom: 0;
-	}
-	
+
 		img {
 			display: block;
 			width: 100%;
@@ -357,5 +375,43 @@
 		
 	}
 	
+}
+
+.home,
+.page-theme-wild-west {
+	
+	.header .header-embellishment-wrap {
+		padding-bottom: 0;
+		max-width: 1280px;
+		margin: auto;
+		transition: $transition;
+		
+	@media screen and (min-width: 1370px) {
+		max-width: 100%;
+	}
+		
+		img {
+		    position: relative;
+		    bottom: -0.7em;
+			margin: -0.7em auto 0;
+		    bottom: -0.7vw;
+			margin: -1vw auto 0;	
+			
+		@media screen and (min-width: 1370px) {
+		    bottom: -0.7em;
+			margin: -0.7em auto 0;
+		    bottom: -0.7vw;
+			margin: -1vw auto 0;
+		}
+
+		@media screen and (min-width: 1371px) {
+			bottom: -0.7em;
+			margin: -1em auto 0;
+		}
+					
+	    }
+	    
+	}
+	    
 }
 	

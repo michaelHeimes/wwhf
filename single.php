@@ -10,13 +10,17 @@ get_header(); ?>
 	<div class="top old-paper-bg">
 			
 		<header class="article-header">
-			<img class="a-head-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/page-banner-left.svg"/>
 	
-			<div class="fancy-header-wrap with-prongs about-heading-wrap text-center grid-x grid-x-padding">
-				<h1 class="black no-white-shadow page-title text-center cell small-12"><?php the_title(); ?></h1>
+			<img class="a-head a-head-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/left_interior_hero.svg"/>
+	
+			<div class="grid-container">
+				<div class="fancy-header-wrap with-prongs about-heading-wrap text-center grid-x grid-x-padding">
+					<h1 class="black no-white-shadow page-title text-center cell small-12"><?php the_title(); ?></h1>
+				</div>
 			</div>
+			
+			<img class="a-head a-head-right" src="<?php echo get_template_directory_uri(); ?>/assets/images/right_interior_hero.svg"/>
 	
-			<img class="a-head-right" src="<?php echo get_template_directory_uri(); ?>/assets/images/page-banner-right.svg"/>
 		</header> <!-- end article header -->
 			
 			
@@ -34,7 +38,7 @@ get_header(); ?>
 						
 						<?php if ( is_active_sidebar( 'postfooter' ) ):?>
 							<div class="cell small-12 text-center">
-								<img src="https://wild-west-hackin-fest.local/wp-content/themes/wwhf/assets/images/tickets-divider.svg">
+								<img src="/wp-content/themes/wwhf/assets/images/tickets-divider.svg">
 							</div>
 	
 							<?php get_sidebar('postfooter'); ?>

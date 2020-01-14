@@ -8,12 +8,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('archive-post'); ?> role="article">		
 	
-	<a href="<?php the_permalink() ?>" rel="bookmark">			
+		<a href="<?php the_permalink() ?>" rel="bookmark">			
 	
-		<header class="archive-article-header">
-			<h2><?php the_title(); ?></h2>
-			<time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished"><?php echo get_the_date(); ?></time>
-		</header> <!-- end article header -->
+			<header class="archive-article-header">
+				<h2><?php the_title(); ?></h2>
+				<time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished"><?php echo get_the_date(); ?></time>
+			</header> <!-- end article header -->
+		</a>
 						
 		<section class="archive-content content-wrap" itemprop="text">
 			<?php the_post_thumbnail('full'); ?>
@@ -25,12 +26,14 @@
 	    	<p class="tags"><?php the_tags('<span class="tags-title">' . __('Tags:', 'jointswp') . '</span> ', ', ', ''); ?></p>
 		</footer> <!-- end article footer -->	
 		
-		<p class="read-more style-button black">Read More</p>
+		<a href="<?php the_permalink() ?>" rel="bookmark">
+			<p class="read-more style-button black">Read More</p>
+		</a>
 		
 	</a>
 	
 	<div class="text-left post-divider-wrap">
-		<img src="https://wild-west-hackin-fest.local/wp-content/themes/wwhf/assets/images/ticket-card-divider.svg">
+		<img src="/wp-content/themes/wwhf/assets/images/ticket-card-divider.svg">
 	</div>
 				    						
 </article> <!-- end article -->

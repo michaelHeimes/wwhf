@@ -32,8 +32,12 @@ get_header(); ?>
 					</div>
 					</div>
 					
-					<img class="buffalo-scene" src="<?php echo get_template_directory_uri(); ?>/assets/images/buffalo-scene-bg.svg"/>
+<!-- 					<img class="buffalo-scene" src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage_landscape.svg"/> -->
 						
+					<div class="home-buffalo-scene">
+						<img class="left" src="<?php echo get_template_directory_uri(); ?>/assets/images/left-home-landscape.svg"/>
+						<img class="right" src="<?php echo get_template_directory_uri(); ?>/assets/images/right-home-landscape.svg"/>
+					</div>
 						
 										
 				</div><!-- end top -->
@@ -94,7 +98,7 @@ get_header(); ?>
 											
 											<div class="overlay">
 										    
-										    	<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+										    	<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?> <?php the_field('fest_year');?></a></h3>
 										    	
 										    	
 												<?php if( have_rows('ticket_card') ):?>
